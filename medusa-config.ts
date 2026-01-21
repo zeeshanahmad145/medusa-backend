@@ -1,6 +1,6 @@
-import { loadEnv, defineConfig } from '@medusajs/framework/utils'
+import { loadEnv, defineConfig } from "@medusajs/framework/utils";
 
-loadEnv(process.env.NODE_ENV || 'development', process.cwd())
+loadEnv(process.env.NODE_ENV || "development", process.cwd());
 
 module.exports = defineConfig({
   projectConfig: {
@@ -18,6 +18,11 @@ module.exports = defineConfig({
         is_test: true,
         resolve: "@medusajs/payment-manual",
       },
+      {
+        id: "system",
+        is_test: true,
+        resolve: "@medusajs/payment-system",
+      },
     ],
   },
-})
+});
