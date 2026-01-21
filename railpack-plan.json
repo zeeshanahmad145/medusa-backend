@@ -1,0 +1,7 @@
+{
+  "steps": {
+    "install": "npm install",
+    "build": "echo 'skip build for medusa'",
+    "deploy": "npm run start"
+  }
+}
